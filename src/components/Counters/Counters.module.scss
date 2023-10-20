@@ -1,0 +1,37 @@
+@import "src/theme/variables";
+@import "src/theme/fonts";
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid $gray-500;
+  padding: 10px;
+  border-radius: 8px;
+
+  &Title {
+    @include heading-md;
+    color: $blue-light;
+  }
+
+  &Btn {
+    display: flex;
+    gap: 10px;
+  }
+
+  &BtnItem {
+    padding: 5px;
+    @include text-md;
+    background: $gray-500;
+    border-radius: 5px;
+    color: $white;
+  }
+
+  &Card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+}

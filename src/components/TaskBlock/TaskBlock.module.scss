@@ -1,0 +1,49 @@
+@import "src/theme/variables";
+@import "src/theme/fonts";
+
+.wrap {
+  padding: 15px;
+  background: $gray-800;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  &Title {
+    @include heading-lg;
+    color: $gray-200;
+  }
+
+  &Text {
+    @include text-lg;
+    color: $gray-400;
+  }
+
+  &Ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    @include text-md;
+    color: $gray-400;
+    padding-left: 20px;
+  }
+
+  &ResponseText {
+    @include heading-md;
+    color: $blue-light;
+  }
+
+  &Decision {
+    background: $gray-600;
+    padding: 10px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  &DecisionText {
+    @include text-md;
+    color: $gray-100;
+  }
+}
